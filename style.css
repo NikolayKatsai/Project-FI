@@ -1,5 +1,57 @@
+
+.top, .bottom{
+   background: darkblue;
+    position: fixed;
+    width: 100%;
+}
+.bottom{
+    bottom: 0;
+}
 .main{
-    color: red;
-    font-size: x-large;
+    padding-top: 160px;
+    padding-bottom: 50px;
+    overflow-y: auto;
+
+}
+.menu-item, .fi-label, .search-field, .bottom{
+    display:inline-block;
+    color:white;
+}
+
+.fi-label{
+    padding: 30px;
+}
+.search-field{
+    padding: 30px;
+}
+.menu-item{
+    padding: 50px;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+.news{
+    height: 200px;
+    background: dodgerblue;
+}
+.label-event{
+    height: 80px;
+    width: 100%;
+    background: deepskyblue;
+}
+
+.event-label{
+    height: 70px;
+    width: 100%;
+    background: lightcoral;
+}
+.events-table{
+    height: 400px;
+    background: aquamarine;
+}
+.button-more{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
