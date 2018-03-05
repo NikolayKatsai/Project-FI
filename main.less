@@ -1,5 +1,5 @@
 
-.top{
+.top {
   background: darkblue;
   position: fixed;
   width: 100%;
@@ -32,7 +32,7 @@
   }
   .events-table {
     height: 400px;
-  //  background: aquamarine;
+    //  background: aquamarine;
   }
   .button-more {
     padding-left: 100px;
@@ -56,17 +56,42 @@
   color: white;
 }
 
-
 .menu {
   display: flex;
   justify-content: space-between;
 
-  .menu-item {
-  padding: 50px;
-  padding-right: 10px;
-  padding-top: 0px;
-  text-align: center;
-}
+  .menu-list2 {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+
+    .menu-item {
+      padding: 5px 5px;
+      width: 19%;
+      margin: 8px 5px 5px 5px;
+      text-align: center;
+      font-size: 18px;
+
+    }
+
+    @media (max-width: 1366px) {
+      .menu-item {
+        width: 18%;
+      }
+
+      .menu-list2 {
+        padding-right: 3%;
+        padding-left: 4%;
+      }
+    }
+    @media (max-width: 806px) {
+      .menu-item {
+        width: 16%;
+        font-size: 15px;
+
+      }
+    }
+  }
 
   .menu-list {
     padding-left: 4%;
@@ -86,19 +111,20 @@
       padding-right: 10px;
       margin: 8px 5px 5px 5px;
     }
+
     @media (max-width: 1090px) {
       .menu-item2 {
         width: 15%;
 
       }
 
-    @media (max-width: 1025px) {
-      .menu-item2 {
-        width: 14%;
-        font-size: 13px;
-      }
+      @media (max-width: 1025px) {
+        .menu-item2 {
+          width: 14%;
+          font-size: 13px;
+        }
 
-    }
+      }
 
       @media (max-width: 740px) {
         .menu-item2 {
@@ -128,33 +154,40 @@
           font-size: 9px;
         }
 
-        .logo{
+        .logo {
           width: 80%;
           height: 80%;
         }
       }
 
-  }
+    }
 
   }
   @media (max-width: 635px) {
-  .menu-list {
-    padding: 0;
+    .menu-list {
+      padding: 0;
+    }
   }
 }
-}
 
-.event-list{
+.event-list {
   padding-right: 40px;
   padding-left: 40px;
 }
 
-.img-new{
+.img-new {
   background: antiquewhite;
   margin: 10px;
   margin-right: 20px;
   margin-left: 20px;
 }
 
-
+.label-date {
+  position: relative;
+  z-index: 200;
+  background: rgb(227, 63, 69);;
+  color: white;
+  width: 60px;
+  height: 60px;
+}
 
