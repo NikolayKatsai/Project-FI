@@ -29,8 +29,39 @@
 </div>
 <div class="main">
     <div class="news">
-        <div class="title">Заголовок новин</div>
-        <div class="comment-new">тут якась інфа про новину</div>
+        <div class="slide-block">
+            <div class="slidewrapper" >
+                <div class="slide">
+                    <img src="SlidePhoto\slide1.jpg" alt="1" class="slideimg" alt="">
+                    <div class="slidetext">Text1</div>
+                </div>
+                <div class="slide">
+                    <img src="SlidePhoto\slide2.jpg" alt="1" class="slideimg" alt="">
+                    <div class="slidetext">Text2</div>
+                </div>
+                <div class="slide">
+                    <img src="SlidePhoto\slide3.jpg" alt="1" class="slideimg" alt="">
+                    <div class="slidetext">Text3</div>
+                </div>
+                <div class="slide">
+                    <img src="SlidePhoto\slide4.jpg" alt="1" class="slideimg" alt="">
+                    <div class="slidetext">Text4</div>
+                </div>
+                <div class = "arrows">
+                    <a class="previous" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095</a>
+                </div>
+                <div class="all-news">
+                    Всі новини
+                </div>
+                <div id="slider-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="label-event"> <!--треба назвати якось норм цю змінну -->
@@ -140,6 +171,6 @@
             </div>
         </div>
     </div>
-
+<script src="script.js" defer></script>
 </body>
 </html>
