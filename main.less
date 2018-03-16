@@ -66,19 +66,9 @@
   }
   .events-table {
     background: aquamarine;
+    display: block;
   }
-  .button-more {
-    margin-left: 40%;
-    width: 20%;
-    margin-bottom: 10px;
-    text-align: center;
-    display: inline-block;
-    border: 2px black solid;
-    font-size: 36px;
-    font-family: Helvetica;
-    color: black;
-    font-weight: lighter;
-  }
+
   .news-label {
     height: 80px;
     width: 100%;
@@ -162,6 +152,20 @@
   }
 }
 
+.button-more {
+  margin-left: 40%;
+  width: 30%;
+  margin-bottom: 10px;
+  text-align: center;
+
+  border: 2px black solid;
+  font-size: 36px;
+  font-family: Helvetica;
+  color: black;
+  font-weight: lighter;
+
+  height: auto;
+}
 .menu-item, .menu-item2, .logo, .fi-label, .search-field, .bottom {
   display: inline-block;
   color: white;
@@ -200,7 +204,6 @@
       .menu-item{
         width: 16%;
         font-size: 15px;
-
       }
     }
   }
@@ -218,6 +221,9 @@
       margin: 8px 5px 5px 5px;
       text-align: center;
       font-size: 15px;
+      overflow: hidden;
+      text-overflow: clip;
+
     }
     .logo {
       padding-left: 10px;
@@ -288,19 +294,38 @@
   padding-left: 40px;
 
 }
+.new-card{
+  margin: 0 auto;
+  content: "";
+}
+
+.new-text{
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  top: -40px;
+}
 
 .img-new {
-  background: antiquewhite;
+  display: block;
+  height: 70px;
   margin: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  background-image: url(12.jpg);
+  background-size: cover;
+  box-sizing: border-box;
 }
 
 .label-date{
   position: relative;
-  display: inline-block;
   left: 5px;
-  top: 5px;
+  top: -105px; //при зміні величини екрану змінювати цей показник !!!!!!!!!!!
   background: #EB5757;
   color: white;
   width: 60px;
@@ -576,4 +601,10 @@
   right:10px;
 }
 
+.day{
+  font-size: 24px;
+}
 
+.month{
+  font-size: 14px;
+}
