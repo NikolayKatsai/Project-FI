@@ -11,6 +11,8 @@
     <link rel="stylesheet/less" type="text/css" href="students.less"/>
     <!— LESS JavaScript компілятор —>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="top">
@@ -20,9 +22,19 @@
     </div>
 </div>
 <div class="main">
-     <div id="schedule"> тут будет расписание
-
-
+     <div id="schedule">
+         <div class="container">
+         <div class="dropdown">
+             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Курс
+             </button>
+             <ul class="dropdown-menu">
+                 <li><button class="choose-course">1 курс</button></li>
+                 <li><button class="choose-course">2 курс</button></li>
+                 <li><button class="choose-course">3 курс</button></li>
+                 <li><button class="choose-course">4 курс</button></li>
+             </ul>
+         </div>
+         </div>
      </div>
 <div id="content">
          <div class="content-div">
